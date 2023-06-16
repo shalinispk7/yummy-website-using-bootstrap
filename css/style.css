@@ -6,7 +6,16 @@
 .text-fam{
 font-family: 'Amatic SC', cursive;
 }
-
+header{
+	position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+.mt-yummy{
+	scroll-margin-top: 110px;
+	margin-top: 5rem!important;
+}
 .home-sec , .about-why{
 	background-color:#eeeeee;
 }
@@ -33,6 +42,12 @@ font-family: 'Amatic SC', cursive;
     padding: 15px 50px;
     left: 50px;
     right: 50px;
+}
+.about-col{
+	padding-left:30px;
+}
+.about-col li i{
+	margin-right:10px;
 }
 .about-why .card{
 	padding: 30px;
@@ -90,8 +105,16 @@ font-family: 'Amatic SC', cursive;
 	padding: 0 60px;
     margin-bottom: 15px;
 }
+.menu-line{
+	border-bottom:2px solid gray;
+}
+.menu-line:hover{
+	border-bottom:2px solid red;
+	color:red;
+	cursor: pointer;
+}
 .test-slider-img{
-border-radius: 99px;
+border-radius: 50%;
     box-shadow: 0 0 5px #8f7c7c;
 }
 .stars i{
@@ -127,6 +150,19 @@ position:relative;
 	bottom:0;
 	color:white;
 	}
+.event-card h2{
+	border-bottom:2px solid red;
+	display:inline;
+}
+.event-card p{
+	padding-top:15px;
+}
+/* BOOK A ATABLE SECTION */
+.btable-sec{
+	justify-content: center;
+    display: flex;
+    align-items: center;
+}
 /* CHEF SECTION */
 .chef-icon a{
 	display: block;
@@ -178,13 +214,24 @@ position:relative;
 .foot-head{
     border-bottom: 1px solid #ffffff36;
 }
-.foot-head i{
+.foot-head .foot-icon{
 	font-size: 25px;
-    padding-right: 15px;	
+    padding-right: 15px;
+	margin-top: 20px;	
+}
+.foot-para h4{
+	    margin-bottom: 20px
 }
 .footer-sec{
 	background-color: #1f1f24;
     color: rgba(255, 255, 255, 0.7);
+}
+.f-icon{
+	text-decoration: underline;
+    color: #ffffffab;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 6px 8px;
 }
 
 

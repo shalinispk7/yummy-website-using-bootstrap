@@ -16,31 +16,31 @@
 
 <body>
 <header >
-<nav class="navbar navbar-expand-lg navbar-light bg-warning p-4">
+<nav class="navbar navbar-expand-lg navbar-light bg-white p-4">
   <div class="container">
-    <a class="navbar-brand" href="#">Yummy.</a>
+    <a class="navbar-brand fw-bold fs-2" href="#">Yummy<span class="text-danger">.</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+      <ul class="navbar-nav  mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">about</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="#">Menu</a>
+          <a class="nav-link" href="#menu">Menu</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="#">Events</a>
+          <a class="nav-link" href="#events">Events</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="#">Chefs</a>
+          <a class="nav-link" href="#chefs">Chefs</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="#">Gallery</a>
+          <a class="nav-link" href="#gallery">Gallery</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -54,7 +54,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
         <button class="btn btn-danger rounded-pill" type="submit">Book A Table</button>
@@ -64,7 +64,7 @@
 </header>
 
 <!-- HOME SECTION -->
-<section class="home-sec mt-5">
+<section id="home"class="home-sec mt-yummy">
 <div class="container m-auto">
 	<div class="row d-flex bd-highlight justify-content-between align-items-center py-5">
 		<div class="col-sm-12 col-md-5 col-lg-5">
@@ -85,7 +85,7 @@
 </section>
 
 <!-- ABOUT SECTION  -->
-<section class="about-sec mt-5 mb-5">
+<section id="about"class="about-sec mt-yummy">
 <div class="container">
 	<div class="about-heading text-center">
 		<h3 class="text-muted fs-6">ABOUT US</h3>
@@ -100,12 +100,12 @@
 				<h2 class="text-danger">+1 5589 55488 55</h2>
 			</div>
 		</div>
-		<div class="col-sm-12 col-lg-5">
+		<div class="col-sm-12 col-lg-5 about-col">
 			<p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			<ul class="list-unstyled">
-				<li><i class="bi bi-check2-all"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-				<li><i class="bi bi-check2-all"></i>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-				<li><i class="bi bi-check2-all"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+				<li class="pb-2"><i class="bi bi-check2-all text-danger"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+				<li class="pb-2"><i class="bi bi-check2-all text-danger"></i>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+				<li class="pb-2"><i class="bi bi-check2-all text-danger"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
 			</ul>
 			<p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
 			<div class="about-img">
@@ -117,7 +117,7 @@
 </div>
 </section>
  <!-- ABOUT CARDS WHY -->
- <section class="about-why mt-5 mb-5">
+ <section class="about-why mt-5">
  <div class="container">
 	<div class="row d-flex align-items-center">
 		<div class="col-sm-12 col-lg-4">
@@ -162,7 +162,7 @@
  </div>
  </section>
  <!-- NUMBERING SECTION -->
- <section class="mt-5 mb-5 num-sec">
+ <section class="mt-5 num-sec">
  <div class="container">
 	<div class="row d-flex justify-content-center align-items-center">
 		<div class="text-center col-sm-6 col-lg-3 text-light">
@@ -187,7 +187,7 @@
  
  <!-- MENU SECTION  -->
  
- <section id="menu" class="menu">
+ <section id="menu" class="menu mt-yummy">
  <div class="container">
         <div class="menu-head text-center">
           <h3 class=" text-muted fs-6">Our Menu</h2>
@@ -197,25 +197,25 @@
         <ul class="nav d-flex justify-content-center " role="tablist">
 
           <li class="nav-item" role="presentation">
-            <a class="nav-link show active" data-bs-toggle="tab" data-bs-target="#menu-starters" aria-selected="true" role="tab">
-              <h4>Starters</h4>
+            <a class="nav-link show active text-danger" data-bs-toggle="tab" data-bs-target="#menu-starters" aria-selected="true" role="tab">
+              <h4 class="menu-line">Starters</h4>
             </a>
           </li><!-- End tab nav item -->
 
           <li class="nav-item" role="presentation">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast" aria-selected="false" role="tab" tabindex="-1">
-              <h4>Breakfast</h4>
+            <a class="nav-link text-dark" data-bs-toggle="tab" data-bs-target="#menu-breakfast" aria-selected="false" role="tab" tabindex="-1">
+              <h4 class="menu-line">Breakfast</h4>
             </a><!-- End tab nav item -->
 
           </li><li class="nav-item" role="presentation">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch" aria-selected="false" role="tab" tabindex="-1">
-              <h4>Lunch</h4>
+            <a class="nav-link text-dark" data-bs-toggle="tab" data-bs-target="#menu-lunch" aria-selected="false" role="tab" tabindex="-1">
+              <h4 class="menu-line">Lunch</h4>
             </a>
           </li><!-- End tab nav item -->
 
           <li class="nav-item" role="presentation">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner" aria-selected="false" role="tab" tabindex="-1">
-              <h4>Dinner</h4>
+            <a class="nav-link text-dark" data-bs-toggle="tab" data-bs-target="#menu-dinner" aria-selected="false" role="tab" tabindex="-1">
+              <h4 class="menu-line">Dinner</h4>
             </a>
           </li><!-- End tab nav item -->
 
@@ -227,7 +227,7 @@
 
             <div class="tab-header text-center">
               <p>Menu</p>
-              <h3>Starters</h3>
+              <h3 class="text-danger">Starters</h3>
             </div>
 
             <div class="row gy-5">
@@ -243,35 +243,35 @@
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
+              <div class="col-lg-4 menu-item text-center">
                 <a href="image/menu-item-2.png" class="glightbox"><img src="image/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Aut Luia</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $14.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
+              <div class="col-lg-4 menu-item text-center">
                 <a href="image/menu-item-3.png" class="glightbox"><img src="image/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Est Eligendi</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $8.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
+              <div class="col-lg-4 menu-item text-center">
                 <a href="image/menu-item-4.png" class="glightbox"><img src="image/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $12.95
                 </p>
               </div><!-- Menu Item -->
@@ -279,10 +279,10 @@
               <div class="col-lg-4 menu-item">
                 <a href="image/menu-item-5.png" class="glightbox"><img src="image/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $12.95
                 </p>
               </div><!-- Menu Item -->
@@ -290,10 +290,10 @@
               <div class="col-lg-4 menu-item">
                 <a href="image/menu-item-6.png" class="glightbox"><img src="image/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $9.95
                 </p>
               </div><!-- Menu Item -->
@@ -305,73 +305,73 @@
 
             <div class="tab-header text-center">
               <p>Menu</p>
-              <h3>Breakfast</h3>
+              <h3 class="text-danger">Breakfast</h3>
             </div>
 
             <div class="row gy-5 ">
 
               <div class="col-lg-4 menu-item text-center">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
+                <a href="image/menu-item-1.png" class="glightbox"><img src="image/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Magnam Tiste</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $5.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-2.png" class="glightbox"><img src="image/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Aut Luia</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $14.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-3.png" class="glightbox"><img src="image/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Est Eligendi</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $8.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-4.png" class="glightbox"><img src="image/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $12.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-5.png" class="glightbox"><img src="image/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $12.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-6.png" class="glightbox"><img src="image/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $9.95
                 </p>
               </div><!-- Menu Item -->
@@ -383,73 +383,73 @@
 
             <div class="tab-header text-center">
               <p>Menu</p>
-              <h3>Lunch</h3>
+              <h3 class="text-danger">Lunch</h3>
             </div>
 
             <div class="row gy-5">
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-1.png" class="glightbox"><img src="image/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Magnam Tiste</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $5.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-2.png" class="glightbox"><img src="image/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Aut Luia</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $14.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-3.png" class="glightbox"><img src="image/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Est Eligendi</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $8.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-4.png" class="glightbox"><img src="image/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $12.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-5.png" class="glightbox"><img src="image/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $12.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-6.png" class="glightbox"><img src="image/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $9.95
                 </p>
               </div><!-- Menu Item -->
@@ -461,73 +461,73 @@
 
             <div class="tab-header text-center">
               <p>Menu</p>
-              <h3>Dinner</h3>
+              <h3 class="text-danger">Dinner</h3>
             </div>
 
             <div class="row gy-5">
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-1.png" class="glightbox"><img src="image/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Magnam Tiste</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $5.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-2.png" class="glightbox"><img src="image/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Aut Luia</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $14.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-3.png" class="glightbox"><img src="image/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Est Eligendi</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $8.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-4.png" class="glightbox"><img src="image/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $12.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-5.png" class="glightbox"><img src="image/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $12.95
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
+              <div class="col-lg-4 menu-item text-center">
+                <a href="image/menu-item-6.png" class="glightbox"><img src="image/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
+                <p class="text-muted">
                   Lorem, deren, trataro, filede, nerada
                 </p>
-                <p class="price">
+                <p class="text-danger fs-3 fw-bold">
                   $9.95
                 </p>
               </div><!-- Menu Item -->
@@ -541,7 +541,7 @@
     </section>
  <!-- TESTIMONIAL SECTION -->
  
- <section class="test-slider-sec mt-5">
+ <section class="test-slider-sec mt-yummy">
 <div class="container">
 	<div class="test-slider-head text-center">
 		<h3 class="fs-6 text-muted">TESTIMONIALS</h5>
@@ -621,7 +621,7 @@
  
  
  <!-- EVENTS SECTION  -->
-<section class="event-sec mt-5">
+<section id="events"class="event-sec mt-yummy">
 <div class="container-fluid">
 	<div class="event-head text-center">
 		<h3 class="text-muted fs-6">EVENTS</h3>
@@ -629,29 +629,29 @@
 	</div>
 	<div class="row">
 		<div class="event-yummy owl-carousel owl-theme">
-			<div >
+			<div class="col-sm-12">
 				<div class="bg-1">
 					<div class="event-card">
-						<h3>Private Parties</h3>
-						<h2>$99</h2>
+						<h3 class="fw-bold">Private Parties</h3>
+						<h2 class="fw-bold">$99</h2>
 						<p>" Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas. "</p>
 					</div>
 				</div>
 			</div>
-			<div >
-				<div class=" bg-2">
+			<div class="col-12" >
+				<div class=" bg-2 col-12 ">
 					<div class="event-card">
-						<h3>Private Parties</h3>
-						<h2>$99</h2>
+						<h3>Birthday Parties</h3>
+						<h2>$499</h2>
 						<p>" Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas. "</p>
 					</div>
 				</div>
 			</div>
-			<div >
-				<div class="bg-3">
+			<div class="col-12">
+				<div class="bg-3 col-12">
 					<div class="event-card">
-						<h3>Private Parties</h3>
-						<h2>$99</h2>
+						<h3>Custom Parties</h3>
+						<h2>$289</h2>
 						<p>" Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas. "</p>
 					</div>
 				 </div>
@@ -663,7 +663,7 @@
  
  <!-- CHEFS SECTION  -->
  
- <section class="chef-sec mt-5">
+ <section id="chefs" class="chef-sec mt-yummy">
  <div class="container">
 	<div class="chef-head text-center">
 		<h3 class="fs-6 text-muted">CHEFS</h3>
@@ -729,7 +729,7 @@
  </section>
  
  <!-- GALLERY SECTION -->
- <section class="mt-5">
+ <section id="gallery" class="mt-yummy">
 <div class="container">
 	<div class="gallery-head text-center">
 		<h3 class="fs-6 text-muted">GALLERY</h3>
@@ -778,7 +778,7 @@
 		<div class="col-sm-12 col-lg-4">
 			<img src="image/reservation.jpg" class="img-fluid" alt="">
 		</div>
-		<div class="col-sm-12 col-lg-8">
+		<div class="col-sm-12 col-lg-8 btable-sec">
 		<form >
 			<div class="row">
 			
@@ -815,7 +815,7 @@
  </section>
  
  <!-- MAP SECTION  -->
- <section class=" map-sec mt-5">
+ <section id="contact"class=" map-sec mt-yummy">
  <div class="container">
 	<div class="map-head text-center text-muted"> 
 		<h5 class="fs-6">CONTACT</h5>
@@ -869,29 +869,29 @@
  <div class="container">
 	<div class="row foot-head py-5">
 		<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center">
-			<i class="bi bi-geo-alt"></i>
+			<i class="bi bi-geo-alt foot-icon"></i>
 			<div class="foot-para">
 				<h4>Address</h4>
 				<p>A108 Adam Street<br>New York, NY 535022 - US</p>
 			</div>
 		</div>
 		<div class="col-sm-6 col-lg-3  d-flex justify-content-center align-items-center">
-			<i class="bi bi-telephone"></i>
+			<i class="bi bi-telephone foot-icon"></i>
 			<div class="foot-para">
 				<h4>Reservation</h4>
 				<p>Phone: +1 5589 55488 55<br>Email: info@example.com </p>
 			</div>
 		</div>
 		<div class="col-sm-6 col-lg-3  d-flex justify-content-center align-items-center">
-			<i class="bi bi-clock"></i>
+			<i class="bi bi-clock foot-icon"></i>
 			<div class="foot-para">
 				<h4>Opening Hours</h4>
-				<p>Mon-Sat: 11AM - 23PM Sunday: Closed</p>
+				<p>Mon-Sat: 11AM - 23PM <br>Sunday: Closed</p>
 			</div>
 		</div>
 		<div class="col-sm-6 col-lg-3">
 			
-			<div class="foot-para">
+			<div class="foot-para text-center">
 				<h4>Follow Us</h4>
 				<a href="#"><i class="bi bi-twitter f-icon"></i></a>
 				<a href="#"><i class="bi bi-facebook f-icon"></i></a>
